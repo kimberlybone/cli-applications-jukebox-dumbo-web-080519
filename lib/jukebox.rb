@@ -41,9 +41,9 @@ def run
   while input != "exit" do
     case input
       when "list"
-        list 
+        list(array) 
       when "play"
-        play
+        play(array)
       when "help"
         help 
     end 
