@@ -41,9 +41,9 @@ def run
   while input != "exit" do
     when input == "list"
       list 
-      when == "play"
+      when input == "play"
       play
-      elsif == "help"
+      when input  == "help"
       help 
     end 
     break
