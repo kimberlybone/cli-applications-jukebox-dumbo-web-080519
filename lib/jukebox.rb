@@ -16,7 +16,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number: "
-  input = gets.chomp 
+  input = gets.downcase.chomp 
   if (1..9).include?(input.to_i)
     puts "Playing #{input.to_i}"
     elsif songs.include?(input)
