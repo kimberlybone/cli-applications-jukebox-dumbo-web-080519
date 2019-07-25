@@ -10,17 +10,17 @@ def help
 end 
 
 
-def list(array)
-  array.each_with_index do |item, index|
+def list(songs)
+  songs.each_with_index do |item, index|
     puts "#{index +1}. #{item}"
   end 
 end 
 
 
-def play(array)
+def play(songs)
   puts "Please enter a song name or number: "
   input = gets.chomp 
-  if array.include?(input)
+  if songs.include?(input)
     puts "Playing #{input}"
   else 
     puts "Invalid input, please try again"
