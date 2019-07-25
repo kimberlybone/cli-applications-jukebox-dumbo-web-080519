@@ -11,10 +11,8 @@ end
 
 
 def list(array)
-  i = 1
   array.each_with_index do |item, index|
-    array[item] = index
-    i += 1
+    puts "#{index +1}. #{item}"
   end 
 end 
 
