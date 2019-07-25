@@ -32,16 +32,16 @@ def exit_jukebox
   puts "Goodbye"
 end 
 
-def run(array) 
+def run(songs) 
   help 
   puts "Please enter a command: "
   input = gets.chomp 
   while input != "exit" do
     case input
       when "list"
-        list(array) 
+        list(songs) 
       when "play"
-        play(array)
+        play(songs)
       when "help"
         help 
     end 
