@@ -39,9 +39,9 @@ def run
   puts "Please enter a command: "
   input = gets.chomp 
   while input != "exit" do
-    if input == "list"
+    when input == "list"
       list 
-      elsif == "play"
+      when == "play"
       play
       elsif == "help"
       help 
