@@ -44,11 +44,13 @@ def run(songs)
         play(songs)
       when "help"
         help 
+      when "exit"
+        exit_jukebox
     end 
     break
   end 
-  if input == "exit"
-    exit_jukebox
+  #if input == "exit"
+    #exit_jukebox
   end 
 end 
       
