@@ -33,9 +33,10 @@ end
 
 def run(songs) 
   help 
-  puts "Please enter a command: "
-  input = gets.chomp 
+  input = ""
   while input != "exit" do
+    puts "Please enter a command: "
+    input = gets.chomp
     case input
       when "list"
         list(songs) 
