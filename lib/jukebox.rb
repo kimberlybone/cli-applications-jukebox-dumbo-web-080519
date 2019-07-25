@@ -19,6 +19,8 @@ def play(songs)
   input = gets.chomp 
   if songs.include?(input.to_i)
     puts "Playing #{input.to_i}"
+    elsif songs.include?(input)
+    puts "Playing #{input}"
   else 
     puts "Invalid input, please try again"
   end
@@ -49,8 +51,5 @@ def run(songs)
     end 
     break
   end 
-  #if input == "exit"
-    #exit_jukebox
-  #end 
 end 
       
